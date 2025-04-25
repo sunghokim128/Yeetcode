@@ -1,0 +1,7 @@
+/ChromeExtension/Backend/node_modules
+/ChromeExtension/Backend/package-lock.json
+.DS_Store
+/ChromeExtension/Backend/.env
+/node_modules
+/package-lock.json
+/package.json

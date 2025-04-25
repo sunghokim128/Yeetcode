@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1B1B1B;
+    font-family: 'Arial', sans-serif;
+    color: #e6e6e6;
+}
+
+/* Game Container */
+.game-container {
+    background: #312F2F;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Table Styling */
+.game-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.game-table th, .game-table td {
+    border: 2px solid #555;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.game-table th {
+    background-color: #1B1B1B;
+}
+
+/* Challenge Completion Styling */
+td.player1, td.player2 {
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+td.player1:hover, td.player2:hover {
+    transform: scale(1.1);
+}
+
+/* Problem Link */
+.problem-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.problem-link:hover {
+    text-decoration: underline;
+    color: #eab764;
+}
+
+/* General text color */
+th, td {
+    color: #ffffff;
+}
+
+/* Bottom Section (Timer & Scores) */
+.bottom-section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #312F2F;
+    border-radius: 10px;
+}
+
+/* Timer */
+.timer {
+    background: #4a5d9b;
+    color: white;
+    border-radius: 16px;
+    padding: 8px 12px;
+    font-size: 16px;
+    min-width: 70px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Scores Container */
+.scores-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Player Score */
+.player-score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1B1B1B;
+    padding: 6px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 40px;
+    grid-column: span 1;
+}
+
+.player-score:first-child {
+    grid-column: 2;
+}
+
+.player-score:last-child {
+    grid-column: 3;
+}
+
+/* Score Boxes */
+.score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e6e6e6;
+    text-align: center;
+}

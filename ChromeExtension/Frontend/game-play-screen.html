@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Play</title>
+    <link rel="stylesheet" href="assets/css/game_play_styles.css">
+</head>
+<body>
+    <div class="outer-border">
+        <div class="game-container">
+            <table class="game-table">
+                <thead>
+                    <tr>
+                        <th>Problems</th>
+                        <th id="gamePlayer1">Player 1</th>
+                        <th id="gamePlayer2">Player 2</th>
+                    </tr>
+                </thead>
+                <tbody id="problemsTableBody">
+                    <!-- Problems will be dynamically inserted here -->
+                </tbody>
+            </table>
+     
+            <div class="bottom-section">
+                <div class="timer" id="timerText">1:00:00</div>
+                <div class="scores-container">
+                    <div class="player-score">
+                        <div class="score" id="player1-score">0</div>
+                    </div>
+                    <div class="player-score">
+                        <div class="score" id="player2-score">0</div>
+                    </div>
+                </div>
+            </div>
+     
+            <script type="module" src="assets/js/timer.js"></script>
+            <script type="module" src="assets/js/game_play.js"></script>
+        </div>
+    </div>
+</body>
+</html>

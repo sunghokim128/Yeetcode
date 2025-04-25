@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- reactive resizing based on user's device -->
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <div class="outer-border ">
+
+        <div id="main-screen" class="screen active">
+
+            <img src="assets/images/logo.png" alt="Yeetcode Logo" class="logo">
+
+            <h1>Yeetcode</h1>
+
+            <button id="join-team-button" class="btn">Join Team</button>
+
+            <button id="create-team-button" class="btn">Create Team</button>
+            
+        </div>
+
+        <button id="profile-button" class="btn">Profile</button>
+
+    </div>
+
+
+
+    <div> <!-- Note Section -->
+        <!-- Hidden Checkbox -->
+        <input type="checkbox" id="toggle-note-checkbox" hidden>
+
+        <!-- Note Header (Label acts as the toggle button) -->
+        <label for="toggle-note-checkbox" id="note-header" class="note-header">
+            <span style="color: #fff;">💡 Tips</span>
+            <span id="toggle-note-button" style="color: #fff;">▼</span>
+        </label>
+
+        <!-- Note Content -->
+        <div id="note-content" class="note-content">
+            <div id="note-text"></div> <!-- Container for the text -->
+        </div>
+    </div>
+
+    <script type="module" src="assets/js/popup.js"></script>
+    <script src="assets/js/notes.js"></script> <!-- Add this script for notes -->
+
+</body>
+
+</html>
